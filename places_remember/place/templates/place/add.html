@@ -1,0 +1,18 @@
+{% extends "place/base.html" %}
+
+{% block content %}
+    {% include "place/nav.html" %}
+    <div class="mt-4">
+        <h1 class="text-center">Add a new memory</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="memory_name" class="form-label">Name: </label>
+            <input type="text" name="memory_name" id="memory_name" class="form-control"/><br/>
+            <label for="location" class="form-label">Location: </label>
+            <input type="text" name="location" id="location" class="form-control"/><br/>
+            <label for="comment" class="form-label">Comment: </label>
+            <textarea name="comment" id="comment" class="form-control"></textarea><br/>
+            <input type="submit" value="Add" class="btn btn-primary">
+        </form>
+    </div>
+{% endblock content %}

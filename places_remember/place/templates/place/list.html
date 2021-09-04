@@ -1,9 +1,22 @@
 {% extends "place/base.html" %}
 
 {% block content %}
-    <nav class="navbar navbar-light bg-light justify-content-end">
-        <img src="{{ avatar_url }}" width="50" height="50" class="rounded-circle nav-item mx-2">
-        <span class="nav-item mr-3">{{user.get_full_name}}</span>
-        <a href="{% url 'logout' %}" class="nav-item mx-2">Logout</a>
-    </nav>
+    {% include "place/nav.html" %}
+    <div class="mt-4">
+        {% if memories %}
+        <h1 class="text-center mb-4">Your memories</h1>
+        <ul class="list-group">
+            {% for memory in memories %}
+                <li class="list-group-item list-group-item-action my-1">
+                    <h5>Name: {{memory.memory_name}}</h5>
+                    <p>Location: {{memory.location}}</p>
+                    <p>Memory: {{memory.comment}}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <h1 class="text-center">YOU HAVE NO MEMORIES</h1>
+        {% endif %}
+        <p class="text-center mt-4"><a href="{% url 'place-add' %}" class="btn btn-primary">ADD A MEMORY</a></p>
+    </div>
 {% endblock content %}
