@@ -2,6 +2,14 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from .models import Memory
+from django.contrib import messages
+from django.contrib.auth.views import LogoutView
+
+class UserLogoutView(LogoutView):
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            messages.info(request, "You have successfully logged out.")
+        return super().dispatch(request, *args, **kwargs)
 
 def place_home(request):
     return render(request, 'place/home.html')

@@ -21,7 +21,7 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(template_name='place/home.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='place-home'), name='logout'),
+    path('logout/', place_views.UserLogoutView.as_view(next_page='place-home'), name='logout'),
     path('oauth/', include('social_django.urls', namespace='social')),
     path('', include('place.urls')),
 ]
