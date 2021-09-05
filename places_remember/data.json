@@ -1,0 +1,120 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$NDj7ei9XJnroIangn54jTV$Fhe+lgDwqOu4Irm0x5U4oNZ44Nk5UfJ3W03ytCgS8yM=",
+        "last_login": "2021-09-04T09:11:56.173Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-08-31T14:43:24.461Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "!ITozY8oWhglPC1Rr1efCcoXkphSPEjAlw017MK2f",
+        "last_login": "2021-09-04T09:13:01.246Z",
+        "is_superuser": false,
+        "username": "Lionel Berry",
+        "first_name": "Lionel",
+        "last_name": "Berry",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-09-04T09:12:59.757Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "!ITozY8oWhglPC1Rr1efCcoXkphSPEjAlw017MK2f",
+        "last_login": "2021-09-04T09:13:01.246Z",
+        "is_superuser": false,
+        "username": "Len Collins",
+        "first_name": "Len",
+        "last_name": "Collins",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-09-04T09:12:59.757Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "social_django.usersocialauth",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "provider": "facebook",
+        "uid": "27564664729733",
+        "extra_data": "{\"auth_time\": 1630746780, \"id\": \"27564664729733\", \"expires\": 5163926, \"granted_scopes\": [\"public_profile\"], \"denied_scopes\": null, \"access_token\": \"FaHoeTDy0BAKnlJjGrKZCvsZBcgsjBbGnuZA80q0HD1lJ34ZBSUIZCr7FZA1pZCGg719eCRVbMC8FVXPT01EC1o6kRDufEePBA78kTDMFSGQuZBO2odaE19AAOtaxiNzD58mwbaiyIhGLwsISzlTbQs27E0iwbIYo0pjQOUXK9y5FNK8DDeYFhyZBG2IjZBglXOtEWCjPuzQZAQJXQbyHU0LrYMsMvNrbqYB1aTWVj7LtFgZDZD\", \"token_type\": null, \"avatar_url\": \"https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=27564664729733&height=200&width=200\"}",
+        "created": "2021-09-04T09:12:59.863Z",
+        "modified": "2021-09-04T09:13:00.765Z"
+    }
+},
+{
+    "model": "social_django.usersocialauth",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "provider": "facebook",
+        "uid": "361795179061412",
+        "extra_data": "{\"auth_time\": 1630746780, \"id\": \"361795179061412\", \"expires\": 5163926, \"granted_scopes\": [\"public_profile\"], \"denied_scopes\": null, \"access_token\": \"AREFaHoeTDy0BAKnlJjGrKZCvsZBcgsjBbGnuZA80q0HD1lJ34ZBSUIZCr7FZA1pZCGg719eCRVbMC8FVXPT01EC1o6kRDufEePBA78kTDMFSGQuZBO2odaE19AAOtaxiNzD58mwbaiyIhGLwsISzlTbQs27E0iwbIYo0pjQOUXK9y5FNK8DDeYFhyZBG2IjZBglXOtEWCjPuzQZAQJXQbyHU0LrYMsMvNrbqYB1aTWVj7LtFgZDZD\", \"token_type\": null, \"avatar_url\": \"https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=361795179061412&height=200&width=200\"}",
+        "created": "2021-09-04T09:12:59.863Z",
+        "modified": "2021-09-04T09:13:00.765Z"
+    }
+},
+{
+    "model": "place.memory",
+    "pk": 1,
+    "fields": {
+        "memory_name": "Tet 2017",
+        "location": "KT City",
+        "comment": "Fun",
+        "owner": 2
+    }
+},
+{
+    "model": "place.memory",
+    "pk": 2,
+    "fields": {
+        "memory_name": "Summer 2018",
+        "location": "KT City",
+        "comment": "Fun",
+        "owner": 3
+    }
+},
+{
+    "model": "place.memory",
+    "pk": 3,
+    "fields": {
+        "memory_name": "Winter 2019",
+        "location": "KT City",
+        "comment": "Fun",
+        "owner": 3
+    }
+},
+{
+    "model": "place.memory",
+    "pk": 4,
+    "fields": {
+        "memory_name": "Tet 2020",
+        "location": "KT City",
+        "comment": "Fun",
+        "owner": 3
+    }
+}
+]
